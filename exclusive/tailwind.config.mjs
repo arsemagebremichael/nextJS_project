@@ -9,7 +9,7 @@ export default {
           primary: "var(--color-primary)",
           secondary: "var(--color-secondary)",
           green: "var(--green)",
-          "bright-green": "var(--bright-green)",
+          bright-green: "var(--bright-green)",
           orange: "var(--orange)",
           red: "var(--red)",
           yellow: "var(--yellow)",
