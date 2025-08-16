@@ -1,6 +1,5 @@
 "use client";
 
-import { useState, useEffect } from 'react';
 import { ArrowLeftIcon, ArrowRightIcon } from '@/app/shared-components/Icons';
 interface NavigationArrowsProps {
   onPrev: () => void;

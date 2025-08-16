@@ -3,6 +3,7 @@ import Link from "next/link";
 import { Poppins } from "next/font/google";
 import { FiSend } from 'react-icons/fi';
 import { useState } from "react";
+import Image from "next/image";
 import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin } from "react-icons/fa";
 
 const poppins = Poppins({
@@ -71,21 +72,21 @@ const Footer = () => {
                     <h3 className="font-semibold text-3xl pb-3">Get Our App</h3>
                     <p className="text-gray-300">Save $3 with App New User Only</p>
                     <div className="flex space-x-3 mb-3">
-                        <img
+                        <Image
                             src="/images/qr.png"
                             alt="QR code"
                             className="w-22 h-22 object-contain border border-white"
                         />
                         <div className="flex flex-col justify-between gap-2">
                             <Link href="#" aria-label="Google Play Store" passHref>
-                                <img
+                                <Image
                                     src="/images/gp.webp"
                                     alt="Google Play Store"
                                     className="w-30 object-contain cursor-pointer"
                                 />
                             </Link>
                             <Link href="#" aria-label="Apple App Store" passHref>
-                                <img
+                                <Image
                                     src="/images/as.webp"
                                     alt="Apple App Store"
                                     className="w-30 object-contain cursor-pointer"

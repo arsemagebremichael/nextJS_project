@@ -8,7 +8,6 @@ import Link from "next/link";
 import Title from "../home/components/Title";
 import { FcGoogle } from "react-icons/fc";
 import Footer from "../shared-components/Footer";
-import NavAdvert from "../shared-components/NavAdvert";
 
 
 const SignUp = () => {
@@ -66,11 +65,11 @@ const SignUp = () => {
         <Button
           variant="ter"
           onClickHandler={handleSignUp}
-          butttonText="Create Account"
+          buttonText="Create Account"
 
         />
         <Button
-          butttonText="Sign up with Google"
+          buttonText="Sign up with Google"
           variant="qua"
           icon={<FcGoogle className="w-5 h-5" />}
           onClickHandler={handleGoogleSignUp}

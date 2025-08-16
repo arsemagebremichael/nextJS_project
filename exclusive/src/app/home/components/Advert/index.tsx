@@ -24,11 +24,10 @@ const Advert = () => {
 
   return (
     <div className="w-3/4 bg-black relative flex items-center px-10 h-102 mt-5">
-      
       <div className="flex-1 text-white">
         <div className="flex items-center gap-7 mb-5">
-          <span className=" w-10 h-10  flex items-center justify-center">
-            <AppleIcon className=''/>
+          <span className="w-10 h-10 flex items-center justify-center">
+            <AppleIcon />
           </span>
           <span className="font-poppins">iPhone 14 Series</span>
         </div>
@@ -37,7 +36,7 @@ const Advert = () => {
           off Voucher
         </h2>
         <button className="underline text-white flex items-center gap-1 font-poppins text-lg cursor-pointer select-none py-2">
-          Shop Now <span className="ml-1"><ArrowRightIcon/></span>
+          Shop Now <span className="ml-1"><ArrowRightIcon /></span>
         </button>
       </div>
       <div className="flex-1 flex justify-end items-center h-full">

@@ -69,7 +69,7 @@ export function ChevronRightIcon({ className = "" }) {
 }
 export function ChevronDownIcon({ className = "" }) {
     return (
-        <svg width="36" height="22" viewBox="0 0 36 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg width="36" height="22" className={className} viewBox="0 0 36 22" fill="none" xmlns="http://www.w3.org/2000/svg">
   <path
     d="M26.1012 1.64432L34.9639 10.9994L26.1012 20.3545"
     stroke="black"
@@ -169,7 +169,7 @@ export function GuaranteeIcon({ className = "" }) {
 
 export function AppleIcon({ className = "" }) {
     return (
-<svg fill="white" viewBox="0 0 24 24" className="">
+<svg fill="white" viewBox="0 0 24 24" className={className}>
               <path d="M17.7 13.5c-.1-2.1 1.6-3.1 1.7-3.2-.9-1.3-2.3-1.4-2.8-1.4-1.2-.1-2.4.7-3 .7-.6 0-1.5-.7-2.4-.7-1.2 0-2.3.7-2.9 1.8-1.2 2.1-.3 5.1.9 6.7.6.8 1.3 1.7 2.2 1.7.9 0 1.3-.5 2.4-.5s1.5.5 2.4.5c.9 0 1.5-.8 2.1-1.7.6-.8.8-1.6.8-1.7 0-.1-2.1-.8-2.2-3.1zm-2.7-6.2c.5-.6.9-1.4.8-2.2-.8.1-1.7.5-2.2 1.2-.5.6-.9 1.4-.8 2.1.8 0 1.7-.4 2.2-1.1z" />
             </svg>
 

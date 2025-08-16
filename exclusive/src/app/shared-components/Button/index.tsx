@@ -1,7 +1,7 @@
 "use client";
 
 interface ButtonProps {
-    butttonText: string,
+    buttonText: string,
     variant: string,
     onClickHandler: () => void;
     icon?: React.ReactNode;
@@ -9,7 +9,7 @@ interface ButtonProps {
 }
 
 
-const Button = ({ butttonText, variant, onClickHandler, icon }: ButtonProps) => {
+const Button = ({ buttonText, variant, onClickHandler, icon }: ButtonProps) => {
     const variantSwitch = (variant: string) => {
         switch (variant) {
             case "primary":
@@ -31,7 +31,7 @@ const Button = ({ butttonText, variant, onClickHandler, icon }: ButtonProps) => 
     return (
         <button className={`${variantClass} cursor-pointer font-poppins`} onClick={onClickHandler}>
             {icon && <span className="mr-2 flex items-center">{icon}</span>}
-            {butttonText}
+            {buttonText}
         </button>
     );
 }

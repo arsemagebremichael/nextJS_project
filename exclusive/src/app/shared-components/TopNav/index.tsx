@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-import { ChevronDownIcon, HeartIcon, SearchIcon, CartIcon } from "../Icons/index"
+import { HeartIcon, SearchIcon, CartIcon } from "../Icons/index"
 export default function TopNav() {
 
     return (

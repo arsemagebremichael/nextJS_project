@@ -1,14 +1,13 @@
 import Button from "@/app/shared-components/Button";
 import React, { useEffect, useState } from "react";
-
-const handleButtonClick = () => {
-    alert('!');
-  };
+import Image from "next/image";
 
 const MusicBanner: React.FC = () => {
+  const handleButtonClick = () => {
+    alert("!");
+  };
 
-    
- const [countdownDate] = useState(() => {
+  const [countdownDate] = useState(() => {
     const date = new Date();
     date.setDate(date.getDate() + 5);
     return date;
@@ -48,9 +47,11 @@ const MusicBanner: React.FC = () => {
   const pad = (num: number) => num.toString().padStart(2, "0");
 
   return (
-    <div className="font-poppins w-3/4 m-auto relative bg-black text-white flex flex-col md:flex-row items-center justify-between  px-20 py-16 gap-16 overflow-hidden">
+    <div className="font-poppins w-3/4 m-auto relative bg-black text-white flex flex-col md:flex-row items-center justify-between px-20 py-16 gap-16 overflow-hidden">
       <div className="flex flex-col gap-6 max-w-xl w-full">
-        <span className="text-green-500 font-medium tracking-wide text-2xl">Categories</span>
+        <span className="text-green-500 font-medium tracking-wide text-2xl">
+          Categories
+        </span>
         <h1 className="text-6xl font-medium tracking-wide">
           Enhance Your <br /> Music Experience
         </h1>
@@ -72,12 +73,21 @@ const MusicBanner: React.FC = () => {
           ))}
         </div>
 
-                <Button variant="secondary"  onClickHandler={handleButtonClick} butttonText= "Buy Now!"/>
+        <Button
+          variant="secondary"
+          onClickHandler={handleButtonClick}
+          buttonText="Buy Now!"
+        />
       </div>
 
       <div className="relative w-full max-w-lg">
-        <img
-          src="/images/speaker.png" alt="JBL Speaker" className="w-full object-contain" style={{ filter: "drop-shadow(0 0 30px rgba(0,0,0,0.9))" }}
+        <Image
+          src="/images/speaker.png"
+          alt="JBL Speaker"
+          width={400}
+          height={300}
+          className="object-contain"
+          style={{ filter: "drop-shadow(0 0 30px rgba(0,0,0,0.9))" }}
         />
         <div className="absolute inset-0 bg-gradient-to-r from-black/90 to-transparent pointer-events-none" />
       </div>

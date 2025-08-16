@@ -10,7 +10,6 @@ import Button from './shared-components/Button';
 import Label from './home/components/Label';
 import Categories from './home/components/Categories';
 import MusicBanner from './home/components/MusicExperience';
-import NavAdvert from './shared-components/NavAdvert';
 
 export default function Home() {
   const exampleProducts = [
@@ -120,7 +119,7 @@ export default function Home() {
 
       <ProductCard products={exampleProducts} />
       <div className='flex flex-col items-center py-10'>
-        <Button variant='primary' butttonText="View all Products" onClickHandler={handleButtonClick} />
+        <Button variant='primary' buttonText="View all Products" onClickHandler={handleButtonClick} />
 
       </div>
       <div>
