@@ -39,12 +39,7 @@ const ProductCard = ({ products }: ProductCardProps) => {
       <div className=" mx-auto ">
         <div className="relative">
           <div className="flex items-center justify-between mb-4">
-          <NavigationArrows
-              onPrev={handlePrev}
-              onNext={handleNext}
-              currentIndex={currentIndex}
-              maxIndex={maxIndex}
-            />
+          
           </div>
           <div className="overflow-hidden">
             <div

@@ -64,21 +64,20 @@ const MusicBanner: React.FC = () => {
           ].map(({ label, value }) => (
             <div
               key={label}
-              className="flex flex-col items-center justify-center w-20 h-20 rounded-full bg-white text-black font-bold shadow-lg"
+              className="flex flex-col items-center justify-center w-18 h-18 rounded-full bg-white text-black font-bold shadow-lg"
             >
               <span className="text-lg">{value}</span>
-              <span className="text-xs font-normal uppercase">{label}</span>
+              <span className="text-xs font-normal">{label}</span>
             </div>
           ))}
         </div>
 
                 <Button variant="secondary"  onClickHandler={handleButtonClick} butttonText= "Buy Now!"/>
-
       </div>
 
       <div className="relative w-full max-w-lg">
         <img
-          src="/images/speaker" alt="JBL Speaker" className="w-full object-contain" style={{ filter: "drop-shadow(0 0 30px rgba(0,0,0,0.9))" }}
+          src="/images/speaker.png" alt="JBL Speaker" className="w-full object-contain" style={{ filter: "drop-shadow(0 0 30px rgba(0,0,0,0.9))" }}
         />
         <div className="absolute inset-0 bg-gradient-to-r from-black/90 to-transparent pointer-events-none" />
       </div>

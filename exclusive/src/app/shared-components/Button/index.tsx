@@ -1,31 +1,36 @@
 "use client";
 
-interface ButtonProps{
-    butttonText: string, 
+interface ButtonProps {
+    butttonText: string,
     variant: string,
     onClickHandler: () => void;
+    icon?: React.ReactNode;
+    
 }
 
 
-const Button = ({butttonText, variant, onClickHandler}: ButtonProps) =>{
-    const variantSwitch = (variant: string)=>{
-        switch(variant){
+const Button = ({ butttonText, variant, onClickHandler, icon }: ButtonProps) => {
+    const variantSwitch = (variant: string) => {
+        switch (variant) {
             case "primary":
                 return "bg-red-500 text-white px-6 py-2 rounded-lg mb-8 hover:bg-red-600 transition"
             case "secondary":
-                return "mt-4 px-8 py-3 bg-green-500 hover:bg-green-600 rounded-md font-semibold transition-colors duration-300 w-max" 
-            
+                return "px-15 py-5 w-max bg-green-500 hover:bg-white hover:text-black text-xl rounded-md  duration-300 "
+            case "ter":
+                return "bg-red-500 font-lg text-white px-6 py-4 rounded-lg mb-8 hover:bg-red-600 transition"
+            case "qua":
+                return "flex items-center font-lg justify-center gap-2 border border-gray-300 rounded-md px-6 py-4 text-black hover:bg-gray-100 transition";
             default:
-                return "bg-red-500 text-white px-6 py-2 rounded-lg mb-8 hover:bg-red-600 transition"
-            }
+                return "border-gray text-white px-6 py-2 rounded-lg mb-8 hover:bg-red-600 transition"
+        }
     }
     const variantClass = variantSwitch(variant);
-    return(
-        
-        <button className={`${variantClass} cursor-pointer`}>
+    return (
+        <button className={`${variantClass} cursor-pointer font-poppins`} onClick={onClickHandler}>
+            {icon && <span className="mr-2 flex items-center">{icon}</span>}
             {butttonText}
         </button>
-    )
+    );
 }
 
 export default Button;

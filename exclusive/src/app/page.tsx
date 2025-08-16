@@ -2,7 +2,7 @@
 
 import Title from './Home/components/Title';
 import Advert from './Home/components/Advert';
-import Header from './shared-components/Header/index';
+import TopNav from './shared-components/TopNav/index';
 import SideBar from './shared-components/Sidebar';
 import CountDown from './Home/components/Timer';
 import ProductCard from './Home/components/ProductsCard';
@@ -10,6 +10,7 @@ import Button from './shared-components/Button';
 import Label from './Home/components/Label';
 import Categories from './Home/components/Categories';
 import MusicBanner from './Home/components/MusicExperience';
+import NavAdvert from './shared-components/NavAdvert';
 
 export default function Home() {
   const exampleProducts = [
@@ -101,7 +102,8 @@ export default function Home() {
 
   return (
     <>
-      <Header />
+    {/* <NavAdvert/> */}
+      <TopNav />
       <div className='w-3/4 mx-auto flex justify-between '>
         <SideBar />
         <Advert />
@@ -116,20 +118,25 @@ export default function Home() {
         </div>
       </div>
 
-
       <ProductCard products={exampleProducts} />
       <div className='flex flex-col items-center py-10'>
         <Button variant='primary' butttonText="View all Products" onClickHandler={handleButtonClick} />
 
       </div>
       <div>
-      <Label label="Categories"/>
-        <Title title="Browse By Category"/>
+        <Label label="Categories" />
+        <Title title="Browse By Category" />
       </div>
-      <div className='w-3/4 mx-auto'>
-      <Categories />
+      <div className='w-4/5 mx-auto'>
+        <Categories />
       </div>
-      <MusicBanner/>
+      <div className='mt-10'>
+        <Label label="Categories" />
+        <Title title="Browse By Category" />
+        <ProductCard products={exampleProducts} />
+
+      </div>
+      <MusicBanner />
 
     </>
   )

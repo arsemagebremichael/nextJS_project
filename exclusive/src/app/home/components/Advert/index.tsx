@@ -23,7 +23,7 @@ const Advert = () => {
   }, []);
 
   return (
-    <div className="w-3/4 bg-black relative flex items-center px-10 h-102 ">
+    <div className="w-3/4 bg-black relative flex items-center px-10 h-102 mt-5">
       
       <div className="flex-1 text-white">
         <div className="flex items-center gap-7 mb-5">
