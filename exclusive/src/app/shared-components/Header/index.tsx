@@ -19,7 +19,7 @@ export default function Header() {
             </div>
             <nav>
                 <div className="">
-                    <div className="flex justify-between items-center h-25 w-3/4 mx-auto">
+                    <div className="flex justify-between items-center h-20 w-3/4 mx-auto">
                         <div className="f text-3xl font-bold font-poppins text-primary">
                             Exclusive
                         </div>
@@ -28,7 +28,7 @@ export default function Header() {
                             <li>
                                 <a
                                     href="#"
-                                    className="hover:text-primary"
+                                    className="hover:text-secondary"
                                 >
                                     Home
                                 </a>

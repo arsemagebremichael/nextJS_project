@@ -3,7 +3,7 @@ import {ChevronRightIcon} from "../Icons/index"
 const SideBar = () =>{
     return (
         <aside>
-            <ul className="w-1/7 py-10 space-y-5">
+            <ul className="w-7/4 py-10 space-y-5 h-120">
                 <li className="flex justify-between items-center space-between cursor-pointer select-none" >Woman's Fashion <ChevronRightIcon className="stroke-3 w-4 h-4 "/></li>
                 <li className="flex  justify-between items-center cursor-pointer select-none">Men's Fashion <ChevronRightIcon className="stroke-3 w-4 h-4"/></li>
                 <li>Electronics</li>
