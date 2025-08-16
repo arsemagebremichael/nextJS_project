@@ -27,11 +27,13 @@ const Input: FC<InputProps> = ({
     switch (variant) {
       case "default":
         return "w-full border-b-2 border-gray-400 py-1 px-0 mb-5 focus:outline-none focus:border-black";
+      case "newsletter":
+        return "w-full border-1 border-gray-100 rounded px-4 py-3 mb-5 focus:border-2";
       default:
         return "w-full border-b-2 border-gray-400 py-1 px-0 mb-4 focus:outline-none focus:border-black";
     }
   };
-  
+
 
   const variantClass = variantSwitch(variant);
 

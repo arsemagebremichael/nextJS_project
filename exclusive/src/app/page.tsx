@@ -1,15 +1,15 @@
 "use client";
 
-import Title from './Home/components/Title';
-import Advert from './Home/components/Advert';
+import Title from './home/components/Title';
+import Advert from './home/components/Advert';
 import TopNav from './shared-components/TopNav/index';
 import SideBar from './shared-components/Sidebar';
-import CountDown from './Home/components/Timer';
-import ProductCard from './Home/components/ProductsCard';
+import CountDown from './home/components/Timer';
+import ProductCard from './home/components/ProductsCard';
 import Button from './shared-components/Button';
-import Label from './Home/components/Label';
-import Categories from './Home/components/Categories';
-import MusicBanner from './Home/components/MusicExperience';
+import Label from './home/components/Label';
+import Categories from './home/components/Categories';
+import MusicBanner from './home/components/MusicExperience';
 import NavAdvert from './shared-components/NavAdvert';
 
 export default function Home() {
@@ -112,7 +112,7 @@ export default function Home() {
         <Label label="Today's" />
         <div className='flex items-center w-3/4 mx-auto '>
 
-          <Title title="Flash Sales" />
+          <Title variant= "" title="Flash Sales" />
           <CountDown date="2025-12-31T23:59:59" />
 
         </div>
@@ -125,14 +125,14 @@ export default function Home() {
       </div>
       <div>
         <Label label="Categories" />
-        <Title title="Browse By Category" />
+        <Title variant= "" title="Browse By Category" />
       </div>
       <div className='w-4/5 mx-auto'>
         <Categories />
       </div>
       <div className='mt-10'>
         <Label label="Categories" />
-        <Title title="Browse By Category" />
+        <Title variant= "" title="Browse By Category" />
         <ProductCard products={exampleProducts} />
 
       </div>

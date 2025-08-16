@@ -5,7 +5,7 @@ interface ButtonProps {
     variant: string,
     onClickHandler: () => void;
     icon?: React.ReactNode;
-    
+
 }
 
 
@@ -20,6 +20,9 @@ const Button = ({ butttonText, variant, onClickHandler, icon }: ButtonProps) => 
                 return "bg-red-500 font-lg text-white px-6 py-4 rounded-lg mb-8 hover:bg-red-600 transition"
             case "qua":
                 return "flex items-center font-lg justify-center gap-2 border border-gray-300 rounded-md px-6 py-4 text-black hover:bg-gray-100 transition";
+            case "iconBtn":
+                return "ml-auto px-3 py-2 bg-black rounded cursor-pointer";
+
             default:
                 return "border-gray text-white px-6 py-2 rounded-lg mb-8 hover:bg-red-600 transition"
         }

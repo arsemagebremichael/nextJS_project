@@ -7,6 +7,8 @@ import Button from "../shared-components/Button";
 import Link from "next/link";
 import Title from "../home/components/Title";
 import { FcGoogle } from "react-icons/fc";
+import Footer from "../shared-components/Footer";
+import NavAdvert from "../shared-components/NavAdvert";
 
 
 const SignUp = () => {
@@ -22,6 +24,8 @@ const SignUp = () => {
   }
 
   return (
+    <div>
+   
     <div className="flex flex-col md:flex-row md:items-center gap-40 py-12">
       <div>
         <Image
@@ -79,6 +83,8 @@ const SignUp = () => {
           </Link>
         </p>
       </div>
+    </div>
+    <Footer/>
     </div>
   );
 };
