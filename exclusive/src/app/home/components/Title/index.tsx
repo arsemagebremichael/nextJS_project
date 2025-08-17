@@ -10,10 +10,10 @@ const Title = ({ title, variant}: TitleProps) => {
   const variantSwitch = (variant: string) => {
     switch (variant) {
       case "large":
-        return "text-4xl  font-medium tracking-wider";
-      case "default font-medium":
+        return "text-5xl  font-medium tracking-wider";
+
       default:
-        return "text-3xl";
+        return "text-4xl font-medium";
     }
   };
 

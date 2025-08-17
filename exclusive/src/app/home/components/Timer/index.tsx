@@ -38,27 +38,27 @@ const CountDown: React.FC<TimerProps> = ({ date }) => {
   }, [date]);
 
   return (
-    <div className="w-3/4 mx-auto">
-      <div className="flex flex-col md:flex-row md:items-end justify-between mb-6">
+    <div>
+      <div className="flex flex-col md:flex-row md:items-end justify-between mb-6 font-poppins">
         <div className="flex items-center gap-6 mt-4 md:mt-0">
           <div>
-            <div className="text-m text-black">Days</div>
-            <div className="text-3xl font-bold">{remainingTime.days ?? 0}</div>
+            <div className="text-m text-black ">Days</div>
+            <div className="text-4xl font-medium ">{remainingTime.days ?? 0}</div>
           </div>
-          <div className="text-3xl font-bold">:</div>
+          <div className="text-4xl font-medium text-[var(--color-secondary)]">:</div>
           <div>
-            <div className="text-m text-black">Hours</div>
-            <div className="text-3xl font-bold">{remainingTime.hours ?? 0}</div>
+            <div className="text-m text-black ">Hours</div>
+            <div className="text-4xl font-medium ">{remainingTime.hours ?? 0}</div>
           </div>
-          <div className="text-3xl font-bold">:</div>
+          <div className="text-4xl font-medium text-[var(--color-secondary)]">:</div>
           <div>
-            <div className="text-m text-black">Minutes</div>
-            <div className="text-3xl font-bold">{remainingTime.minutes ?? 0}</div>
+            <div className="text-m text-black ">Minutes</div>
+            <div className="text-4xl font-medium ">{remainingTime.minutes ?? 0}</div>
           </div>
-          <div className="text-3xl font-bold">:</div>
+          <div className="text-4xl font-medium text-[var(--color-secondary)]">:</div>
           <div>
-            <div className="text-m text-black">Seconds</div>
-            <div className="text-3xl font-bold">{remainingTime.seconds ?? 0}</div>
+            <div className="text-m text-black ">Seconds</div>
+            <div className="text-4xl font-medium ">{remainingTime.seconds ?? 0}</div>
           </div>
         </div>
       </div>

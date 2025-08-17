@@ -35,7 +35,7 @@ const ProductCard = ({ products }: ProductCardProps) => {
   const translateX = `calc(-${currentIndex * (100 / cardsPerView)}%)`;
 
   return (
-    <div className="py-8 w-3/4 mx-auto">
+    <div className="py-10 ">
       <div className="flex justify-between mb-4">
         <button
           onClick={handlePrev}
@@ -72,8 +72,9 @@ const ProductCard = ({ products }: ProductCardProps) => {
               <Image
                 src={product.image}
                 alt={product.name}
-                width={250} // use actual or approximate width
-                height={160} // use actual or approximate height
+                width={250} 
+                height={160} 
+                
                 className="object-contain"
               />
               <button className="w-full rounded-sm bg-black text-white py-2 mt-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">

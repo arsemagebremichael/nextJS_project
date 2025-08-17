@@ -1,22 +1,25 @@
-import {ChevronRightIcon} from "../Icons/index"
+import { HiOutlineChevronRight } from "react-icons/hi";
 
-const SideBar = () =>{
-    return (
-        <aside>
-            <ul className="w-7/4 py-10 space-y-5 h-120">
-                <li className="flex justify-between items-center space-between cursor-pointer select-none" >Woman's Fashion <ChevronRightIcon className="stroke-3 w-4 h-4 "/></li>
-                <li className="flex  justify-between items-center cursor-pointer select-none">Men's Fashion <ChevronRightIcon className="stroke-3 w-4 h-4"/></li>
-                <li>Electronics</li>
-                <li>Home & Lifestyle</li>
-                <li>Medicine</li>
-                <li>Sports & Outdoor</li>
-                <li>Baby's & Toys</li>
-                <li>Groceries & Pets</li>
-                <li>Health & Beauty</li>
-            </ul>
-            
-        </aside>
-    )
-}
+const SideBar = () => {
+  return (
+    <aside>
+      <ul className="w-10/6 py-10 space-y-5 h-120 font-poppins cursor-pointer">
+        <li className="flex justify-between items-center space-between  select-none">
+          Woman's Fashion <HiOutlineChevronRight className="stroke-3 w-4 h-4" />
+        </li>
+        <li className="hover:gray-700 flex justify-between items-center cursor-pointer select-none">
+          Men's Fashion <HiOutlineChevronRight className="stroke-3 w-4 h-4" />
+        </li>
+        <li>Electronics</li>
+        <li>Home & Lifestyle</li>
+        <li>Medicine</li>
+        <li>Sports & Outdoor</li>
+        <li>Baby's & Toys</li>
+        <li>Groceries & Pets</li>
+        <li>Health & Beauty</li>
+      </ul>
+    </aside>
+  );
+};
 
 export default SideBar;
