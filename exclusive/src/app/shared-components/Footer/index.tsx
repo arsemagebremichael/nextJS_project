@@ -2,7 +2,6 @@ import React from "react";
 import Link from "next/link";
 import { Poppins } from "next/font/google";
 import { FiSend } from 'react-icons/fi';
-import { useState } from "react";
 import Image from "next/image";
 import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin } from "react-icons/fa";
 
@@ -13,7 +12,6 @@ const poppins = Poppins({
 });
 
 const Footer = () => {
-    const [email, setEmail] = useState("");
     return (
         <footer className={`${poppins.className} bg-black text-white py-15 w-full mx-auto font-poppins`}>
 <div className="mx-auto w-5/6  grid grid-cols-1 md:grid-cols-5 gap-6">
@@ -74,6 +72,8 @@ const Footer = () => {
                     <div className="flex space-x-3 mb-3">
                         <Image
                             src="/images/qr.png"
+                            width={300}
+                            height = {300}
                             alt="QR code"
                             className="w-22 h-22 object-contain border border-white"
                         />
@@ -81,6 +81,8 @@ const Footer = () => {
                             <Link href="#" aria-label="Google Play Store" passHref>
                                 <Image
                                     src="/images/gp.webp"
+                                    width={300}
+                                    height = {300}
                                     alt="Google Play Store"
                                     className="w-30 object-contain cursor-pointer"
                                 />
@@ -88,6 +90,8 @@ const Footer = () => {
                             <Link href="#" aria-label="Apple App Store" passHref>
                                 <Image
                                     src="/images/as.webp"
+                                    width={300}
+                                    height = {300}
                                     alt="Apple App Store"
                                     className="w-30 object-contain cursor-pointer"
                                 />

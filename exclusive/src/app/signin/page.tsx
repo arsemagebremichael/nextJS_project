@@ -6,7 +6,6 @@ import Input from "../shared-components/Input";
 import Button from "../shared-components/Button";
 import Link from "next/link";
 import Title from "../home/components/Title";
-import { FcGoogle } from "react-icons/fc";
 import Footer from "../shared-components/Footer";
 import NavAdvert from "../shared-components/NavAdvert";
 import TopNav from "../shared-components/TopNav";
@@ -20,9 +19,6 @@ const SignUp = () => {
   const handleSignUp = () => {
     alert(`Registering: ${name}, ${contact}`);
   };
-  const handleGoogleSignUp = () => {
-    alert('Continue with google')
-  }
 
   return (
     <>
@@ -34,7 +30,7 @@ const SignUp = () => {
         <TopNav />
           </div>
         
-        <div className="flex flex-col md:flex-row md:items-center gap-40">
+        <div className="flex flex-col md:flex-row md:items-center gap-40 ">
 
 
 
@@ -49,15 +45,10 @@ const SignUp = () => {
           </div>
 
           <div className="flex flex-col justify-center max-w-md w-full">
-            <Title title="Create an account" variant="" />
+            <Title title="Log in to Exclusive" variant="" />
             <p className="mb-6 text-black text-xl font-poppins">Enter your details below</p>
 
-            <Input
-              value={name}
-              onChange={(e) => setName(e.target.value)}
-              placeholder="Name"
-              variant="default"
-            />
+          
 
             <Input
               value={contact}
@@ -73,24 +64,22 @@ const SignUp = () => {
               placeholder="Password"
               variant="default"
             />
-
+            <div className="flex items-center justify-between md:flex-row md:items-center">
             <Button
               variant="ter"
               onClickHandler={handleSignUp}
-              buttonText="Create Account"
+              buttonText="Log in"
 
             />
-            <Button
-              buttonText="Sign up with Google"
-              variant="qua"
-              icon={<FcGoogle className="w-5 h-5" />}
-              onClickHandler={handleGoogleSignUp}
-            />
+            <p className="text-red-400">Forget Password?</p>
+            </div>
+            
+            
 
             <p className="text-lg text-gray-800 text-center mt-6">
-              Already have an account?{" "}
-              <Link href="/signin" className="underline font-medium">
-                Log In
+              Do not have an account?{" "}
+              <Link href="/signUp" className="underline font-medium">
+                Sign Up
               </Link>
             </p>
           </div>

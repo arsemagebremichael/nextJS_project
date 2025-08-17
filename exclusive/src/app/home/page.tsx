@@ -11,11 +11,14 @@ import Label from './components/Label';
 import Categories from './components/Categories';
 import MusicBanner from './components/MusicExperience';
 import NavAdvert from './../shared-components/NavAdvert';
+import Footer from '../shared-components/Footer';
+import NewArrivals from './components/NewArrival';
+import ServiceHighlights from './components/Services';
 
 export default function Home() {
     const exampleProducts = [
         {
-            id: 1,
+            id: 0,
             name: 'HAVIT HV-G92 Gamepad',
             price: 120,
             originalPrice: 160,
@@ -25,7 +28,7 @@ export default function Home() {
             image: '/images/image1.png',
         },
         {
-            id: 2,
+            id: 1,
             name: 'AK-900 Wired Keyboard',
             price: 960,
             originalPrice: 1160,
@@ -35,7 +38,7 @@ export default function Home() {
             image: '/images/image1.png',
         },
         {
-            id: 1,
+            id: 2,
             name: 'HAVIT HV-G92 Gamepad',
             price: 120,
             originalPrice: 160,
@@ -45,7 +48,7 @@ export default function Home() {
             image: '/images/image1.png',
         },
         {
-            id: 2,
+            id: 3,
             name: 'AK-900 Wired Keyboard',
             price: 960,
             originalPrice: 1160,
@@ -55,7 +58,7 @@ export default function Home() {
             image: '/images/image1.png',
         },
         {
-            id: 1,
+            id: 4,
             name: 'HAVIT HV-G92 Gamepad',
             price: 120,
             originalPrice: 160,
@@ -65,7 +68,7 @@ export default function Home() {
             image: '/images/image1.png',
         },
         {
-            id: 2,
+            id: 5,
             name: 'AK-900 Wired Keyboard',
             price: 960,
             originalPrice: 1160,
@@ -75,7 +78,7 @@ export default function Home() {
             image: '/images/image1.png',
         },
         {
-            id: 1,
+            id: 6,
             name: 'HAVIT HV-G92 Gamepad',
             price: 120,
             originalPrice: 160,
@@ -85,7 +88,7 @@ export default function Home() {
             image: '/images/image1.png',
         },
         {
-            id: 2,
+            id: 7,
             name: 'AK-900 Wired Keyboard',
             price: 960,
             originalPrice: 1160,
@@ -100,7 +103,7 @@ export default function Home() {
     };
 
     return (
-        <div>
+        <>
             <NavAdvert />
             <div className='w-4/5 mx-auto'>
 
@@ -119,8 +122,8 @@ export default function Home() {
 
                 </div>
 
-                <ProductCard products={exampleProducts} />
-                
+                <ProductCard showNavigation={true} rows={1} products={exampleProducts} />
+
                 <div className='flex flex-col items-center py-10'>
                     <Button variant='primary' buttonText="View all Products" onClickHandler={handleButtonClick} />
 
@@ -129,17 +132,43 @@ export default function Home() {
                     <Label label="Categories" />
                     <Title variant="" title="Browse By Category" />
                 </div>
-                <div className='w-4/5 mx-auto'>
+                <div>
                     <Categories />
                 </div>
                 <div className='mt-10'>
-                    <Label label="Categories" />
-                    <Title variant="" title="Browse By Category" />
-                    <ProductCard products={exampleProducts} />
+                    <Label label="This Month" />
+                    <Title variant="" title="Best Selling Products" />
+                    <div className='flex justify-end mb-4'>
+                        <Button buttonText='View All' variant='ter' onClickHandler={handleButtonClick} />
+
+                    </div>
+                    <ProductCard showNavigation={false} rows={1} products={exampleProducts} />
 
                 </div>
-                <MusicBanner />
+                <div className='mt-20'>
+                    <MusicBanner />
+
+                </div>
+                <div className='mt-20'>
+                    <Label label="Our Products" />
+                    <Title variant="" title="Explore Our Products" />
+                </div>
+                <div>
+                    <ProductCard showNavigation={true} rows={2} products={exampleProducts} />
+                    <div className='mt-10'>
+                        <ProductCard showNavigation={false} rows={2} products={exampleProducts} />
+
+                    </div>
+                </div>
+                <div className='mt-20'>
+                    <Label label="Featured" />
+                    <Title variant="" title="New Arrival" />
+                </div>
+                <NewArrivals/>
+
+                <ServiceHighlights/>
             </div>
-        </div>
+            <Footer />
+        </>
     )
 }

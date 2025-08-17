@@ -1,6 +1,7 @@
 "use client";
 
-import { ArrowLeftIcon, ArrowRightIcon } from '@/app/shared-components/Icons';
+import { ArrowLeftIcon, ArrowRightIcon } from "@heroicons/react/24/solid";
+
 interface NavigationArrowsProps {
   onPrev: () => void;
   onNext: () => void;

@@ -13,7 +13,7 @@ const Button = ({ buttonText, variant, onClickHandler, icon }: ButtonProps) => {
     const variantSwitch = (variant: string) => {
         switch (variant) {
             case "primary":
-                return "bg-red-500 text-white px-6 py-2 rounded-lg mb-8 hover:bg-red-600 transition"
+                return "bg-red-400 text-white px-15 py-5 rounded-lg mb-8 hover:bg-red-600 transition"
             case "secondary":
                 return "px-15 py-5 w-max bg-green-500 hover:bg-white hover:text-black text-xl rounded-md  duration-300 "
             case "ter":

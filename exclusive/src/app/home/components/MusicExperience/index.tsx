@@ -47,7 +47,7 @@ const MusicBanner: React.FC = () => {
   const pad = (num: number) => num.toString().padStart(2, "0");
 
   return (
-    <div className="font-poppins w-3/4 m-auto relative bg-black text-white flex flex-col md:flex-row items-center justify-between px-20 py-16 gap-16 overflow-hidden">
+    <div className="font-poppins mt- relative bg-black text-white flex flex-col md:flex-row items-center justify-between px-20 py-16 gap-16 overflow-hidden">
       <div className="flex flex-col gap-6 max-w-xl w-full">
         <span className="text-green-500 font-medium tracking-wide text-2xl">
           Categories

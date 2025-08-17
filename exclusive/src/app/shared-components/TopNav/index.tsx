@@ -11,12 +11,12 @@ export default function TopNav() {
   return (
     <nav>
       <div className="">
-        <div className="flex justify-between items-center h-20 w-4/5 mx-auto">
+        <div className="  flex justify-between items-center h-20">
           <div className="f text-3xl font-bold font-poppins text-primary">Exclusive</div>
 
-          <ul className="flex text-xl gap-11 font-poppins hover:text-secondary">
+          <ul className="flex text-xl gap-11 font-poppins hover:">
             <li>
-              <Link href={"#"}>Home</Link>
+              <Link href={"/home"} className="">Home</Link>
             </li>
             <li>
               <Link href={"#"}>Contact</Link>
@@ -25,7 +25,7 @@ export default function TopNav() {
               <Link href={"#"}>About</Link>
             </li>
             <li>
-              <Link href={"/signUp"} className="hover:text-secondary">
+              <Link href={"/signUp"} className="">
                 Sign Up
               </Link>
             </li>
